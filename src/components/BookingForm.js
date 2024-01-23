@@ -121,7 +121,7 @@ export const BookingForm = () => {
   };
 
   return (
-    <div className="p-10 ml-5 bg-white w-96 items-center ">
+    <div className="p-9 mx-24 my-14 text-black bg-white w-96 items-center rounded-3xl">
       {step === 1 && (
         <div>
           <h2 className="text-2xl text-black font-bold mb-4 text-center">
@@ -130,17 +130,22 @@ export const BookingForm = () => {
           <p className="text-center text-black mb-10">
             60+ Expert Physiotherapists for 200+ Conditions
           </p>
-          <label className="block mb-2">
+          <label
+            style={{
+              width: "300px",
+            }}
+            className="block mb-2"
+          >
             <input
               type="text"
               name="name"
               value={formData.name}
               onChange={handleInputChange}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border-x-0 border-b-2 rounded"
               placeholder="Your name"
             />
           </label>
-          <label>
+          <label style={{ position: "relative", width: "285px", borderColor: "white" }}>
             <PhoneInput
               className="relative"
               country={"in"}
@@ -150,9 +155,10 @@ export const BookingForm = () => {
               }
             />
           </label>
+
           <button
             onClick={handleNextStep}
-            className="bg-[#317773] text-white px-4 py-2 rounded hover:bg-[#56c8c2] text-center mt-10"
+            className="bg-[#317773] text-white px-4 py-2 w-full rounded hover:bg-[#56c8c2] text-center font-[600] mt-10"
           >
             Start Your Recovery
           </button>
@@ -163,7 +169,7 @@ export const BookingForm = () => {
       )}
 
       {step === 2 && (
-        <div>
+        <div className="text-black">
           <h2 className="text-xl text-black font-bold mb-4 text-center flex flex-col">
             Help us understand you better
           </h2>
@@ -198,7 +204,7 @@ export const BookingForm = () => {
             />
           </label>
           <button
-            className="bg-[#317773] text-white px-4 py-2 rounded hover:bg-[#56c8c2] text-center mt-10"
+            className="bg-[#317773] w-full text-white px-4 py-2 rounded hover:bg-[#56c8c2] text-center mt-10"
             onClick={handleNextStep}
           >
             Continue
@@ -216,7 +222,7 @@ export const BookingForm = () => {
             pain?
           </p>
 
-          <div className="flex justify-center items-center bg-slate-200 p-2 cursor-pointer shadow-md space-x-2 mb-5">
+          <div className="flex justify-center text-black items-center bg-slate-200 p-2 cursor-pointer shadow-md space-x-2 mb-5">
             {[1, 2, 3, 4, 5].map((value) => (
               <label key={value} className="flex items-center">
                 <input
@@ -259,7 +265,7 @@ export const BookingForm = () => {
           </div>
 
           <button
-            className="bg-[#317773] text-white px-4 py-2 rounded hover:bg-[#56c8c2] text-center mt-5"
+            className="bg-[#317773] w-full text-white px-4 py-2 rounded hover:bg-[#56c8c2] text-center mt-5"
             onClick={handleNextStep}
           >
             Continue
@@ -308,7 +314,7 @@ export const BookingForm = () => {
           </p>
 
           <button
-            className="bg-[#317773] text-white px-4 py-2 rounded hover:bg-[#56c8c2] text-center mt-4"
+            className="bg-[#317773] w-full text-white px-4 py-2 rounded hover:bg-[#56c8c2] text-center mt-4"
             onClick={handleBookAppointment}
           >
             Book Appointment

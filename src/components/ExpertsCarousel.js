@@ -9,7 +9,7 @@ export const ExpertsCarousel = () => {
   const [imageUrls, setImageUrls] = useState([]);
   const [loading, setLoading] = useState(true);
   // eslint-disable-next-line no-unused-vars
-  const [loadingIndexes, setLoadingIndexes] = useState([]); 
+  const [loadingIndexes, setLoadingIndexes] = useState([]);
 
   const settings = {
     dots: true,
@@ -65,7 +65,7 @@ export const ExpertsCarousel = () => {
       <Slider {...settings}>
         {users.map((expert, id) => (
           <div key={id} className="px-6">
-            <div className="bg-[#317773] p-6 rounded-lg">
+            <div className="bg-[#2d4369] p-3 rounded-lg">
               {loading ? (
                 <p>Loading...</p>
               ) : (
@@ -84,7 +84,7 @@ export const ExpertsCarousel = () => {
                   </h2>
                   <p className="text-white text-sm">{expert.company.name}</p>
                   <p className="text-white text-sm">{expert.website}</p>
-                  <button className="text-center bg-[black] rounded-md w-full mt-3 py-2 text-white">
+                  <button className="text-center bg-[black] rounded-md w-full mt-3 py-2 text-white font-bold">
                     Know More
                   </button>
                 </>
