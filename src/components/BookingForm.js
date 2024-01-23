@@ -140,13 +140,16 @@ export const BookingForm = () => {
               placeholder="Your name"
             />
           </label>
-          <PhoneInput
-            country={"in"}
-            value={formData.phoneNumber}
-            onChange={(value) =>
-              setFormData((prevData) => ({ ...prevData, phoneNumber: value }))
-            }
-          />
+          <label>
+            <PhoneInput
+              className="relative"
+              country={"in"}
+              value={formData.phoneNumber}
+              onChange={(value) =>
+                setFormData((prevData) => ({ ...prevData, phoneNumber: value }))
+              }
+            />
+          </label>
           <button
             onClick={handleNextStep}
             className="bg-[#317773] text-white px-4 py-2 rounded hover:bg-[#56c8c2] text-center mt-10"
