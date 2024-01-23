@@ -12,7 +12,7 @@ import { Modalpop } from "./Modalpop";
 
 export const Homepage = () => {
   const backgroundImageUrl =
-    "https://as2.ftcdn.net/v2/jpg/03/20/52/31/1000_F_320523164_tx7Rdd7I2XDTvvKfz2oRuRpKOPE5z0ni.jpg";
+    "https://wallpapers.com/images/high/group-of-physician-thumbs-up-fqj0jrpifoer8uzd.webp";
 
   const [scrollBg, setScrollBg] = useState("transparent");
   const [isModalOpen, setIsModalOpen] = useState(false);
