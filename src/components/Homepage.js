@@ -12,7 +12,7 @@ import { Modalpop } from "./Modalpop";
 
 export const Homepage = () => {
   const backgroundImageUrl =
-    "https://media.istockphoto.com/id/587528274/photo/pensive-doctor-with-hand-on-chin.jpg?s=612x612&w=0&k=20&c=WzVDAe-qGyk_jiD9cYMp_k6xwtjnrspS8muAStkpys0=";
+    "https://as2.ftcdn.net/v2/jpg/03/20/52/31/1000_F_320523164_tx7Rdd7I2XDTvvKfz2oRuRpKOPE5z0ni.jpg";
 
   const [scrollBg, setScrollBg] = useState("transparent");
   const [isModalOpen, setIsModalOpen] = useState(false);
